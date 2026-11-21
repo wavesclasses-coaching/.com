@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en-IN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#3b2419" name="theme-color"/>
+<meta content="light" name="color-scheme"/>
+<meta content="WAVES CLASSES, Awadhpuri Bhopal — Arts, Commerce, PCM, PCB, CUET, NEET and JEE coaching since 2017." name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="WAVES CLASSES" name="author"/>
+<meta content="telephone=yes" name="format-detection"/>
+<meta content="website" property="og:type"/>
+<meta content="WAVES CLASSES" property="og:title"/>
+<meta content="Learn, grow and achieve with WAVES CLASSES." property="og:description"/>
+<meta content="waves-logo.png" property="og:image"/>
+<link href="waves-logo.png" rel="icon" type="image/png"/>
+<link href="waves-logo.png" rel="apple-touch-icon"/>
+<link as="image" href="waves-logo.png" rel="preload"/>
+<title>WAVES CLASSES | Learn · Grow · Achieve</title>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<noscript>
+<style>.loading-screen { display: none !important; }</style>
+<div class="notice">Please enable JavaScript in your browser to use the WAVES CLASSES portal.</div>
+</noscript>
+<div aria-label="Loading WAVES CLASSES" class="loading-screen" id="loadingScreen" role="status">
+<div class="loader-logo-wrap">
+<span aria-hidden="true" class="loader-ring"></span>
+<img alt="WAVES CLASSES logo" class="loader-logo" src="waves-logo.png"/>
+</div>
+<h1 class="loader-title">WAVES CLASSES</h1>
+<p class="developed-by">Developed by Pratham</p>
+<p class="loading-caption">Preparing your learning space…</p>
+</div>
+<header class="topbar site-topbar">
+<a aria-label="WAVES CLASSES home" class="site-brand" href="#" id="homeBrand">
+<img alt="" class="site-logo" src="waves-logo.png"/>
+<span class="site-brand-copy">
+<span class="eyebrow">SINCE 2017 · LEARN · GROW · ACHIEVE</span>
+<span id="brand">WAVES CLASSES</span>
+</span>
+</a>
+<nav aria-label="Main Navigation" class="nav-links desktop-nav">
+<a href="#about">About Us</a>
+<a href="#courses">Courses</a>
+<a href="#vision">Vision &amp; Mission</a>
+<a href="#faculty">Faculty</a>
+<a href="#results">Results</a>
+<a href="#activities">Activities</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="header-actions">
+<button class="top-login-btn" id="topLoginBtn" type="button">Login <span aria-hidden="true">↗</span></button>
+<button class="secondary hidden" id="logoutBtn" type="button">Log out</button>
+</div>
+</header>
+<main>
+<section aria-live="polite" class="notice hidden" id="setupNotice"></section>
+<section class="public-home" id="publicHome">
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+<div class="hero-content">
+<p class="hero-tag"><span aria-hidden="true" class="hero-tag-dot"></span> WAVES CLASSES · AWADHPURI, BHOPAL</p>
+<div class="hero-quote-badge">"सपने वो नही, जो आप सोते वक्त देखते हैं सपने वो होते है, जो आपको सोने नही देते..!"</div>
+<h1>Shape Your Future With <span>Trusted Guidance</span></h1>
+<p class="hero-description">Classes IX to XII | Foundation | Science | Commerce | JEE | NEET | CUET coaching with proven excellence since 2017.</p>
+<div class="hero-actions hero-form-actions">
+<a class="hero-link" href="#contact">Counselling Form <span aria-hidden="true">↗</span></a>
+<button class="hero-secondary" id="openAdmissionForm" type="button">Admission Form <span aria-hidden="true">↗</span></button>
+</div>
+<div aria-label="Institute highlights" class="hero-meta">
+<span>Since 2017</span>
+<span>Expert MANITians &amp; PhD Faculty</span>
+<span>Regular Test Series</span>
+<span>3 Times PTM Session</span>
+</div>
+</div>
+<div aria-hidden="true" class="hero-visual">
+<span class="hero-glow"></span>
+<span class="hero-orbit orbit-one"></span>
+<span class="hero-orbit orbit-two"></span>
+<span class="hero-orbit orbit-three"></span>
+<div class="hero-mark"><img alt="" src="waves-logo.png"/></div>
+<span class="visual-label visual-label-one">LEARN</span>
+<span class="visual-label visual-label-two">GROW</span>
+<span class="visual-label visual-label-three">ACHIEVE</span>
+</div>
+</section>
+
+<!-- VISION & MISSION SECTION -->
+<section class="public-section vision-mission-section" id="vision">
+<div class="section-heading">
+<p class="section-kicker">OUR CORE PHILOSOPHY</p>
+<h2>Vision &amp; Mission of Waves Classes</h2>
+<p class="section-intro">Dedicated to turning potential into performance with disciplined mentorship.</p>
+</div>
+<div class="portal-grid vision-grid">
+<article class="public-card vision-card">
+<div aria-hidden="true" class="card-symbol">✦</div>
+<h3>Vision of Waves Classes</h3>
+<p>To become a leading and trusted coaching institute that empowers students with confidence, knowledge, and excellence, helping them achieve outstanding academic and competitive success.</p>
+</article>
+<article class="public-card mission-card">
+<div aria-hidden="true" class="card-symbol">✧</div>
+<h3>Mission of Waves Classes</h3>
+<p>To provide the right guidance, consistent practice, and personalized mentorship that nurtures confidence, knowledge, and success in every student.</p>
+</article>
+</div>
+
+<!-- WHY JOIN WAVES CLASSES -->
+<div class="why-join-cta">
+  <button class="hero-link" id="openWhyJoin" type="button">Why to Join Waves Classes</button>
+  <p class="muted">Discover the learning support and academic structure we offer.</p>
+</div>
+<div class="modal-overlay hidden" id="whyJoinModal" role="dialog" aria-modal="true" aria-labelledby="whyJoinTitle">
+  <section class="premium-modal">
+    <div class="modal-heading"><div><p class="section-kicker">THE WAVES ADVANTAGE</p><h2 id="whyJoinTitle">Why to Join Waves Classes</h2></div><button class="modal-close" type="button" data-close-modal="whyJoinModal" aria-label="Close">×</button></div>
+    <div class="academic-pillars-grid modal-feature-grid">
+      <div class="pillar-box"><span class="pillar-tag">PTM (PARENTS TEACHERS MEET)</span><h4>3 Times A Session</h4><p>Conducted in June, September and December to keep parents informed about student progress.</p></div>
+      <div class="pillar-box"><span class="pillar-tag">REGULAR TEST SERIES</span><h4>3 Times A Month</h4><p>Mostly conducted on Saturday and Sunday to evaluate regular preparation.</p></div>
+      <div class="pillar-box"><span class="pillar-tag">STUDY MATERIAL</span><h4>Comprehensive Modules</h4><p>Well-researched modules based on the latest syllabus and exam pattern.</p></div>
+      <div class="pillar-box"><span class="pillar-tag">TIMELY COMPLETION</span><h4>Syllabus Finish &amp; Revision</h4><p>Planned syllabus completion with revision and PYQ practice.</p></div>
+    </div>
+  </section>
+</div>
+</section>
+
+<!-- COURSES SECTION -->
+<section aria-labelledby="coursesTitle" class="courses-section" id="courses">
+<div class="section-heading">
+<p class="section-kicker">CLASSES IX TO XII &amp; COMPETITIVE</p>
+<h2 id="coursesTitle">Courses Designed For Success</h2>
+<p class="section-intro">Comprehensive learning pathways from foundational classes to entrance exams.</p>
+</div>
+<div class="course-grid">
+<article class="course-card">
+<span class="course-number">01</span>
+<div class="course-icon">◈</div>
+<h3>Foundation (Classes 9 &amp; 10)</h3>
+<p>Strong fundamental concepts in Science and Mathematics to build a rock-solid base for future competitive exams.</p><button class="secondary course-detail-trigger" data-course="foundation" type="button">Explore course</button>
+</article>
+<article class="course-card">
+<span class="course-number">02</span>
+<div class="course-icon">▤</div>
+<h3>Commerce Stream</h3>
+<p>Expert coaching in Accountancy, Business Studies, and Economics for higher secondary students.</p><button class="secondary course-detail-trigger" data-course="commerce" type="button">Explore course</button>
+</article>
+<article class="course-card">
+<span class="course-number">03</span>
+<div class="course-icon">∑</div>
+<h3>Science Stream (PCM &amp; PCB)</h3>
+<p>Rigorous Physics, Chemistry, Mathematics, and Biology classes for school board excellence.</p><button class="secondary course-detail-trigger" data-course="science" type="button">Explore course</button>
+</article>
+<article class="course-card" id="jee">
+<span class="course-number">04</span>
+<div class="course-icon">⌘</div>
+<h3>JEE Preparation</h3>
+<p>Advanced problem-solving modules, mock tests, and strategic preparation for JEE Main &amp; Advanced.</p><button class="secondary course-detail-trigger" data-course="jee" type="button">Explore course</button>
+</article>
+<article class="course-card" id="neet">
+<span class="course-number">05</span>
+<div class="course-icon">⚗</div>
+<h3>NEET Preparation</h3>
+<p>NCERT-focused biology and medical entrance training under expert doctor mentorship.</p><button class="secondary course-detail-trigger" data-course="neet" type="button">Explore course</button>
+</article>
+<article class="course-card" id="cuet">
+<span class="course-number">06</span>
+<div class="course-icon">＋</div>
+<h3>CUET Coaching</h3>
+<p>Specialized preparation for Common University Entrance Test covering domain subjects and general aptitude.</p><button class="secondary course-detail-trigger" data-course="cuet" type="button">Explore course</button>
+</article>
+</div>
+</section>
+
+<div class="modal-overlay hidden" id="courseDetailModal" role="dialog" aria-modal="true" aria-labelledby="courseDetailTitle">
+  <section class="premium-modal course-detail-modal"><div class="modal-heading"><div><p class="section-kicker">COURSE OVERVIEW</p><h2 id="courseDetailTitle">Course details</h2></div><button class="modal-close" type="button" data-close-modal="courseDetailModal" aria-label="Close">×</button></div><div id="courseDetailContent"></div></section>
+</div>
+
+<!-- FACULTY SECTION -->
+<section aria-labelledby="facultyTitle" class="faculty-section public-section" id="faculty">
+<div class="section-heading">
+<p class="section-kicker">OUR TEACHERS ARE OUR STRENGTH</p>
+<h2 id="facultyTitle">Meet the Leadership &amp; Faculty</h2>
+<p class="section-intro">A student needs more than books to succeed — they need a leader who turns potential into performance.</p>
+          <p class="faculty-roster-note">Meet our eight-member teaching team.</p>
+</div>
+<div class="faculty-grid faculty-photo-grid">
+<article class="faculty-card faculty-photo-card">
+<div class="faculty-card-copy">
+<span class="faculty-subject">FOUNDER</span>
+<div class="faculty-photo-wrap"><img alt="Ankit Shrivastav Sir" class="faculty-photo" loading="lazy" onerror="this.closest('.faculty-photo-wrap').classList.add('photo-missing')" src="assets/teachers/ankit-shrivastava-sir.jpg"/><span aria-hidden="true" class="faculty-photo-fallback">AS</span></div><h3>Ankit Shrivastav Sir</h3>
+<p>PhD (Scholar) · M.Com, B.Ed, B.Com · 9+ Yr Exp (PGT)</p>
+</div>
+</article>
+<article class="faculty-card faculty-photo-card">
+<div class="faculty-card-copy">
+<span class="faculty-subject">CO-FOUNDER</span>
+<div class="faculty-photo-wrap"><img alt="Arpit Saxena Sir" class="faculty-photo" loading="lazy" onerror="this.closest('.faculty-photo-wrap').classList.add('photo-missing')" src="assets/teachers/arpit-saxena-sir.jpg"/><span aria-hidden="true" class="faculty-photo-fallback">AS</span></div><h3>Arpit Saxena Sir</h3>
+<p>PhD (Scholar) MANIT Bhopal · M.Tech, B.Tech · 10+ Yr Exp</p>
+</div>
+</article>
+<article class="faculty-card faculty-photo-card">
+<div class="faculty-card-copy">
+<span class="faculty-subject">FOUNDATION HEAD</span>
+<div class="faculty-photo-wrap"><img alt="Rubal Mam" class="faculty-photo" loading="lazy" onerror="this.closest('.faculty-photo-wrap').classList.add('photo-missing')" src="assets/teachers/rubal-mam.jpg"/><span aria-hidden="true" class="faculty-photo-fallback">RM</span></div><h3>Rubal Mam</h3>
+<p>PhD (Scholar), MBA, B.Com · 8+ Year Experience</p>
+</div>
+</article>
+
+<article class="faculty-card faculty-photo-card">
+<div class="faculty-card-copy">
+<span class="faculty-subject">BIOLOGY · NEET EXPERT</span>
+<div class="faculty-photo-wrap"><img alt="Dr. Imtiyaj Sir" class="faculty-photo" loading="lazy" onerror="this.closest('.faculty-photo-wrap').classList.add('photo-missing')" src="assets/teachers/dr-imtiyaj-sir.jpg"/><span aria-hidden="true" class="faculty-photo-fallback">DI</span></div><h3>Dr. Imtiyaj Sir</h3>
+<p>BHMS · NEET Expert · 13+ Yr. Experience</p>
+</div>
+</article>
+<article class="faculty-card faculty-photo-card">
+<div class="faculty-card-copy">
+<span class="faculty-subject">SST · CUET</span>
+<div class="faculty-photo-wrap"><img alt="Aditya Sir" class="faculty-photo" loading="lazy" onerror="this.closest('.faculty-photo-wrap').classList.add('photo-missing')" src="assets/teachers/aditya-sir.jpg"/><span aria-hidden="true" class="faculty-photo-fallback">AD</span></div><h3>Aditya Sir</h3>
+<p>UGC NET Qualified · MA Geography · BA &amp; B.Ed · 2+ Yr. Exp (PGT)</p>
+</div>
+</article>
+<article class="faculty-card faculty-photo-card">
+<div class="faculty-card-copy">
+<span class="faculty-subject">CHEMISTRY</span>
+<div class="faculty-photo-wrap"><img alt="Ronak Sir" class="faculty-photo" loading="lazy" onerror="this.closest('.faculty-photo-wrap').classList.add('photo-missing')" src="assets/teachers/ronak-sir.jpg"/><span aria-hidden="true" class="faculty-photo-fallback">RS</span></div><h3>Ronak Sir</h3>
+<p>B.Sc (DU) TGT · 8+ Year Experience</p>
+</div>
+</article>
+<article class="faculty-card faculty-photo-card">
+<div class="faculty-card-copy">
+<span class="faculty-subject">COMMERCE / ACCOUNTS</span>
+<div class="faculty-photo-wrap"><img alt="Shivani Mam" class="faculty-photo" loading="lazy" onerror="this.closest('.faculty-photo-wrap').classList.add('photo-missing')" src="assets/teachers/shivani-mam2.jpg"/><span aria-hidden="true" class="faculty-photo-fallback">SM</span></div><h3>Shivani Mam</h3>
+<p> M.Com, B.Com · 7+ Year Experience</p>
+</div>
+</article>
+<article class="faculty-card faculty-photo-card">
+<div class="faculty-card-copy">
+<span class="faculty-subject">ACADEMIC COUNSELLOR</span>
+<div class="faculty-photo-wrap"><img alt="Shivani Mam" class="faculty-photo" loading="lazy" onerror="this.closest('.faculty-photo-wrap').classList.add('photo-missing')" src="assets/teachers/shivani-mam.jpg"/><span aria-hidden="true" class="faculty-photo-fallback">SM</span></div><h3>Shivani Mam</h3>
+<p>UGC NET-Sociology · Research Scholar</p>
+</div>
+</article>
+</div>
+</section>
+
+<!-- RESULTS & SELECTIONS SECTION -->
+<section aria-labelledby="resultsTitle" class="public-section results-section" id="results">
+<div class="section-heading">
+<p class="section-kicker">TRUSTED BY TOPPERS · PREFERRED BY PARENTS</p>
+<h2 id="resultsTitle">Our Selections &amp; Board Toppers</h2>
+<p class="section-intro">"हमारे छात्रों की सफलता, हमारी मेहनत की पहचान।" — Turning ambitions into achievements in NEET, JEE &amp; CUET.</p>
+</div>
+<div class="benefit-grid results-grid">
+<article class="benefit-card">
+<span>IIT-INDORE</span>
+<h3>Shubham Sharma</h3>
+<p>IIT-JEE MAINS + ADV 2025</p>
+</article>
+<article class="benefit-card">
+<span>SRCC DELHI</span>
+<h3>Aditri Sharma</h3>
+<p>Delhi University CUET - 2025</p>
+</article>
+<article class="benefit-card">
+<span>98%</span>
+<h3>Aditri Sharma</h3>
+<p>Class 12th Commerce Board Topper</p>
+</article>
+<article class="benefit-card">
+<span>97.3%</span>
+<h3>Aakriti Pathak</h3>
+<p>Class 9th School Topper</p>
+</article>
+</div>
+<div class="practical-callout" style="margin-top:20px;">
+<strong>More Notable Selections (2025):</strong>
+<span>Shivansh (IIT-JEE Mains), Manish (Arizona USA), Munendra (Arizona USA), Mohit (NEET), Gaurav (NEET), Upasana (NEET), Ishan (MITS Gwalior), Sukhwinder (UOQ Australia), Devendra (IIM Sirmour), Atharva (IIM Rohtak), Abin (Christ CUET), Sonali (BHU CUET), Arun (BHU/DU CUET), Vijay (CA Foundation), Sherin (Kristu Jayanti).</span>
+</div>
+</section>
+
+<!-- CO-CURRICULAR ACTIVITIES SECTION -->
+<section class="public-section activities-section" id="activities">
+<div class="section-heading">
+<p class="section-kicker">HOLISTIC DEVELOPMENT</p>
+<h2>Co-Curricular Activities at Waves Classes</h2>
+<p class="section-intro">Beyond classrooms: seminars, sports leagues, social initiatives, and tours.</p>
+</div>
+<div class="campus-banners-grid">
+<article class="campus-card"><h3>Independence Day &amp; Seminar</h3><p>Motivational seminar by Respected Lieutenant Colonel Amit Khullar.</p></article>
+<article class="campus-card"><h3>Regular Test Series</h3><p>Continuous testing for absolute exam readiness.</p></article>
+<article class="campus-card"><h3>Free Education to Slum Students</h3><p>Social initiative with support of NGO.</p></article>
+<article class="campus-card"><h3>Educational Tour BhimBetka</h3><p>Exploring history and heritage together.</p></article>
+<article class="campus-card"><h3>Waves Premier League (WPL)</h3><p>Sportsmanship and energetic student engagement.</p></article>
+<article class="campus-card"><h3>Waves Scholarship Test (WSAT)</h3><p>Recognizing and rewarding academic merit.</p></article>
+<article class="campus-card"><h3>Traditional Day &amp; Picnic</h3><p>Celebrating festivals and annual excursions to Crescent.</p></article>
+<article class="campus-card"><h3>Bansal Pankh Marathon</h3><p>Spreading awareness on equality and empowerment.</p></article>
+</div>
+</section>
+
+<!-- GOOGLE REVIEWS SECTION -->
+<section aria-labelledby="reviewsTitle" class="public-section reviews-section" id="reviews">
+<div class="section-heading">
+<p class="section-kicker">REVIEWS &amp; FEEDBACK</p>
+<h2 id="reviewsTitle">What Learners Say About Waves</h2>
+<p class="section-intro">Publicly available review highlights. Open Google Maps to read the latest Google reviews directly.</p>
+<div class="review-rating-summary"><span class="review-stars" aria-label="Five stars">★★★★★</span><strong>5.0 / 5 review</strong><small>Individual public review rating · Justdial listing aggregate: 4.8/5 from 98 ratings</small></div>
+</div>
+<div class="portal-grid testimonial-grid">
+<article class="public-card testimonial-card"><div class="card-rating">★★★★★</div><p>“Waves Classes is an excellent coaching center! The faculty is highly experienced and really knows their stuff. The courses are relevant and the learning environment is supportive.”</p><h3>— Prayag · 12 Apr 2026</h3><small class="review-source">Public listing review · Justdial</small></article>
+<article class="public-card testimonial-card"><div class="card-rating">★★★★★</div><p>Public review feedback highlights a broad range of board and competitive-exam courses, subject expertise, clear concepts, doubt-solving and regular assessments.</p><h3>— Reviewer name not displayed</h3><small class="review-source">Public listing review · Justdial</small></article>
+</div>
+<div class="reviews-actions"><button class="hero-link" id="openMoreReviews" type="button">More Reviews</button><a class="secondary review-more-link" href="https://www.google.com/maps/search/?api=1&amp;query=WAVES+CLASSES+Durga+Chowk+168+Samanvay+Nagar+Awadhpuri+Bhopal" target="_blank" rel="noopener">Read Google Reviews ↗</a></div>
+<div class="modal-overlay hidden" id="moreReviewsModal" role="dialog" aria-modal="true" aria-labelledby="moreReviewsTitle"><section class="premium-modal"><div class="modal-heading"><div><p class="section-kicker">PUBLIC REVIEW FEEDBACK</p><h2 id="moreReviewsTitle">More Reviews &amp; Feedback</h2></div><button class="modal-close" type="button" data-close-modal="moreReviewsModal" aria-label="Close">×</button></div><article class="review-detail-item"><div class="card-rating">★★★★★</div><p>“Waves Classes is an excellent coaching center! The faculty is highly experienced and really knows their stuff. The courses are relevant and the learning environment is supportive.”</p><strong>Prayag · 12 Apr 2026</strong><small>Public listing review · Justdial</small></article><article class="review-detail-item"><div class="card-rating">★★★★★</div><p>Public review feedback also mentions a wide range of board and competitive-exam courses, subject expertise, clear concepts, doubt-solving, chapter-wise tests and student growth.</p><strong>Reviewer name not displayed</strong><small>Public listing review · Justdial</small></article><div class="review-theme-list"><h3>Other recurring feedback themes</h3><p>Public listing summaries also mention personalized attention, regular doubt sessions, study materials, test series, a friendly learning environment and counselling support. These are summary themes, not individual quoted reviews.</p></div><a class="hero-link" href="https://www.google.com/maps/search/?api=1&amp;query=WAVES+CLASSES+Durga+Chowk+168+Samanvay+Nagar+Awadhpuri+Bhopal" target="_blank" rel="noopener">Open Google Maps Reviews ↗</a></section></div>
+</section>
+
+<!-- CONTACT & COUNSELLING SECTION -->
+<section aria-labelledby="contactTitle" class="contact-section" id="contact">
+<div class="contact-content-grid">
+<div class="contact-left">
+<p class="section-kicker">GET IN TOUCH</p>
+<h2 id="contactTitle">Start Your Learning Journey</h2>
+<p>Visit WAVES CLASSES in Awadhpuri, Bhopal or contact us directly for admissions.</p>
+<div class="contact-details-stack">
+<div class="contact-address">
+<span aria-hidden="true" class="contact-icon">⌖</span>
+<span><small>INSTITUTE ADDRESS</small><strong>Awadhpuri, Main Road, Near Bikaner/Lenskart, BHEL, Bhopal</strong></span>
+</div>
+<div class="contact-item-row">
+<a class="contact-item" href="tel:9752272107"><span aria-hidden="true" class="contact-icon">☎</span><span><small>ANKIT SIR</small><strong>9752272107</strong></span></a>
+<a class="contact-item" href="tel:7999868369"><span aria-hidden="true" class="contact-icon">☎</span><span><small>ARPIT SIR</small><strong>7999868369</strong></span></a>
+</div>
+</div>
+</div>
+<div class="contact-right panel counselling-panel">
+<h3>Book Your Free Counselling</h3>
+<p class="muted">Fill in your details and our academic counselor will contact you.</p>
+<form id="counsellingForm" novalidate>
+<label for="counsellingName">Student Name<input id="counsellingName" name="full_name" autocomplete="name" placeholder="Enter student's name" required="" maxlength="120"/></label>
+<label for="counsellingPhone">Phone Number<input id="counsellingPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number" required="" maxlength="10"/></label>
+<label for="counsellingClass">Class / Grade<input id="counsellingClass" name="class_grade" placeholder="e.g. Class 10 / 12" required="" maxlength="40"/></label>
+<label for="counsellingCourse">Course Interested<select id="counsellingCourse" name="course_name" required=""><option value="">Select Course</option><option>Foundation (IX - X)</option><option>Science (PCM/PCB)</option><option>Commerce</option><option>JEE Preparation</option><option>NEET Preparation</option><option>CUET Coaching</option></select></label>
+<button class="hero-link" id="counsellingSubmitBtn" style="width:100%; border:none; cursor:pointer; margin-top:14px;" type="submit">Submit Counselling Request</button>
+<p aria-live="polite" class="message" id="counsellingMsg" role="status"></p>
+</form>
+</div>
+</div>
+<div class="map-container-wrap" style="margin-top:35px;">
+<h3>Waves Classes Location Map</h3>
+<p class="muted" style="margin-bottom:12px;">Awadhpuri, Main Road, Near Bikaner/Lenskart, Bhopal</p>
+<div class="map-embed">
+
+<iframe
+  title="Waves Classes Location Map"
+  src="https://maps.google.com/maps?q=WAVES+CLASSES,+Durga+Chowk,+168+Samanvay+Nagar,+Awadhpuri,+Bhopal,+Madhya+Pradesh+462022&z=19&output=embed"
+  width="100%"
+  height="300"
+  style="border:0; border-radius:14px;"
+  allowfullscreen
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="public-footer">
+<div class="footer-main">
+<div class="footer-brand">
+<img alt="" src="waves-logo.png"/>
+<div><strong>WAVES CLASSES</strong><span>SINCE 2017 · LEARN · GROW · ACHIEVE</span></div>
+</div>
+<p>Awadhpuri, Main Road, Near Bikaner/Lenskart, BHEL, Bhopal | Ankit Sir: 9752272107 · Arpit Sir: 7999868369</p>
+</div>
+<div class="footer-bottom">
+<span>© <span id="currentYear">2026</span> WAVES CLASSES. All Rights Reserved.</span>
+<span class="developed-by">Developed by Pratham</span>
+</div>
+</footer>
+</section>
+
+<!-- AUTH PANEL -->
+<section class="panel auth-panel hidden" id="authPanel">
+<button class="back-home-btn" id="backToHomeBtn" type="button">← Back to home</button>
+<p class="section-kicker">WELCOME BACK</p>
+<h2>Continue your journey.</h2>
+<p class="muted">Students and Admin/Owner users can sign in with their registered Google account. New students can submit an admission request.</p>
+<button class="google-btn" id="googleBtn" type="button">Continue with Google</button>
+<div class="or"><span>New admission</span></div>
+<label for="admissionName">Full name<input id="admissionName" placeholder="Student ka poora naam"/></label>
+<label for="admissionEmail">Google Email ID<input autocomplete="email" id="admissionEmail" placeholder="student@gmail.com" required="" type="email"/></label>
+<label for="admissionPhone">Phone<input id="admissionPhone" inputmode="tel" placeholder="Mobile number"/></label>
+<label for="admissionClass">Class / Batch<input id="admissionClass" placeholder="Class / Batch"/></label>
+<label for="admissionCourse">Course<input id="admissionCourse" placeholder="Course"/></label>
+<button class="secondary" id="admissionSubmitBtn" type="button">Submit admission request</button>
+<p aria-live="polite" class="message" id="authMessage" role="status"></p>
+<p class="developed-by auth-credit">Developed by Pratham</p>
+</section>
+
+<!-- APP DASHBOARD PANEL -->
+<section class="hidden" id="appPanel">
+<div class="welcome-row">
+<div>
+<p class="eyebrow" id="roleLabel">PORTAL</p>
+<h2 id="welcomeTitle">Dashboard</h2>
+<p class="muted" id="welcomeText"></p>
+</div>
+<span class="badge" id="siteBadge"></span>
+</div>
+<nav aria-label="Dashboard navigation" class="tabs" id="tabs"></nav>
+<section aria-busy="false" aria-live="polite" class="view panel" id="view"></section>
+</section>
+</main>
+
+<footer class="app-footer">Keep student information private. Configure Supabase and database security before using real student data.</footer>
+
+<script>
+    (() => {
+      "use strict";
+
+      const SHOW_DEVELOPED_BY = true;
+      const getElement = (id) => document.getElementById(id);
+
+      const yearElement = getElement("currentYear");
+      if (yearElement) yearElement.textContent = String(new Date().getFullYear());
+
+      document.querySelectorAll(".developed-by").forEach((item) => {
+        item.hidden = !SHOW_DEVELOPED_BY;
+      });
+
+      const publicHome = getElement("publicHome");
+      const authPanel = getElement("authPanel");
+      const googleBtn = getElement("googleBtn");
+      const topLoginBtn = getElement("topLoginBtn");
+      const logoutBtn = getElement("logoutBtn");
+
+      // Landing page par sirf Login button dikhega, Logout hide rahega
+      if (topLoginBtn) topLoginBtn.classList.remove("hidden");
+      if (logoutBtn) logoutBtn.classList.add("hidden");
+
+      document.querySelectorAll("[data-open-login]").forEach((button) => {
+        button.addEventListener("click", () => {
+          if (publicHome) publicHome.classList.add("hidden");
+          if (authPanel) authPanel.classList.remove("hidden");
+          if (googleBtn) googleBtn.focus();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+
+      if (topLoginBtn) {
+        topLoginBtn.addEventListener("click", () => {
+          if (publicHome) publicHome.classList.add("hidden");
+          if (authPanel) authPanel.classList.remove("hidden");
+          if (googleBtn) googleBtn.focus();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+
+      const backToHomeBtn = getElement("backToHomeBtn");
+      if (backToHomeBtn) {
+        backToHomeBtn.addEventListener("click", () => {
+          if (authPanel) authPanel.classList.add("hidden");
+          if (publicHome) publicHome.classList.remove("hidden");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+
+      const homeBrand = getElement("homeBrand");
+      if (homeBrand) {
+        homeBrand.addEventListener("click", (event) => {
+          event.preventDefault();
+          if (authPanel) authPanel.classList.add("hidden");
+          if (publicHome) publicHome.classList.remove("hidden");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+
+      let loaderFinished = false;
+      const finishLoader = () => {
+        if (loaderFinished) return;
+        loaderFinished = true;
+        const loader = getElement("loadingScreen");
+        if (!loader) return;
+        loader.classList.add("loader-finished");
+        window.setTimeout(() => {
+          if (loader.isConnected) loader.remove();
+        }, 700);
+      };
+
+      window.setTimeout(finishLoader, 1200);
+      window.setTimeout(finishLoader, 4500);
+    })();
+  </script>
+<script defer="" src="config.js"></script>
+<script defer="" src="app.js"></script>
+</body>
+</html>
